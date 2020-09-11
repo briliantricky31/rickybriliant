@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- Web Title -->
+		<title></title>
+		<!-- Web Logo -->
+		<link rel="icon" href="folder/file.png" type="image/x-icon">
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script src="js/jquery-3.1.1.min.js" type="text/javascript"></script>
+		<script src="js/bootstrap.min.js" type="text/javascript"></script>
+		<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+		<link href="css/design.css" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<!-- Color Style -->
+		<style>
+			.header {
+				background: #1a1a1a;
+				color : #ffffff;
+			}
+			.social-bar {
+				background: #0d0d0d;
+			}
+			.social-icon {
+				color: #ffffff;
+			}
+			.fa-facebook:hover {
+				color: #3b5998;
+			}
+			.fa-twitter:hover {
+				color: #0084b4;
+			}
+			.fa-google:hover {
+				color: #db4a39;
+			}
+			.btn-contact {
+				background: #1a1a1a;
+				border: 1px solid #1a1a1a;
+				color: #ffffff;
+			}
+			button.btn-contact:hover {
+				background: #ffffff;
+				color: #1a1a1a;
+			}
+			.input-form {
+				border: 1px solid #1a1a1a;
+			}
+			.btn-send {
+				background: #ffffff;
+				border: 1px solid #1a1a1a;
+				color: #1a1a1a;
+			}
+			button.btn-send:hover {
+				background: #1a1a1a;
+				color: #ffffff;
+			}
+			.btn-download {
+				background: #ffffff;
+				border: 1px solid #1a1a1a;
+				color: #1a1a1a;
+			}
+			button.btn-download:hover {
+				background: #1a1a1a;
+				color: #ffffff;
+			}
+			.carousel-indicators li {
+				border: 1px solid #1a1a1a;
+				background-color: #ffffff;
+			}
+			.carousel-indicators .active {
+				background-color: #1a1a1a;
+			}
+			.skillbar {
+				background: #ffffff;
+				border: 1px solid #1a1a1a;
+			}
+			.skillbar-title {
+				color: #ffffff;
+				background: #1a1a1a;
+			}
+			.skillbar-bar {
+				background: #262626;
+				color: #ffffff;
+			}
+			.service-bg-1 {
+				background:#1a1a1a;
+				border:1px solid #1a1a1a;
+			}
+			.service-color-1 {
+				color:#ffffff;
+			}
+			.service-bg-2 {
+				background:#ffffff;
+				border:1px solid #1a1a1a;
+			}
+			.service-color-2 {
+				color: #1a1a1a;
+			}
+			.img-hover .title-bar {
+				background: #1d1d1d;
+			}
+			.img-hover h2 {
+				color: #ffffff;
+			}
+			.modal-header {
+				background: #1d1d1d;
+			}
+			.modal-title {
+				color: white;
+			}
+			.btn-close {
+				background: #ffffff;
+				border: 1px solid #1a1a1a;
+				color: #1a1a1a;
+			}
+			button.btn-close:hover {
+				background: #1a1a1a;
+				color: #ffffff;
+			}
+			.btn-hire {
+				background: #1a1a1a;
+				border: 1px solid #1a1a1a;
+				color: #ffffff;
+			}
+			button.btn-hire:hover {
+				background: #ffffff;
+				color: #1a1a1a;
+			}
+			.footer-bg {
+				background: #1a1a1a;
+			}
+			.footer {
+				color: #ffffff;
+			}
+		</style>
+	</head>
+	<body>
+		<!-- Header Section -->
+		<nav>
+			<div class="container-fluid header">
+				<div class="row">
+					<div class="col-xs-12 col-sm-5 col-md-4 col-lg-4">
+						<h4 class="text-left">JOHN DOE</h4>
+					</div>
+					<div class="col-xs-12 col-sm-7 col-md-8 col-lg-8">
+						<button class="social-bar pull-right"><a href="#"><i class="fa social-icon fa-facebook"></i></a></button>
+						<button class="social-bar pull-right"><a href="#"><i class="fa social-icon fa-twitter"></i></a></button>
+						<button class="social-bar pull-right"><a href="#"><i class="fa social-icon fa-google"></i></a></button>
+					</div>
+				</div>
+			</div>
+		</nav>
+		<!-- Body Section -->
+		<div class="contaner-fluid content-place">
+			<div class="row">
+				<!-- Profile and Contact Section -->
+				<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+					<div><center><img src="image/photo-profile.jpg" class="img-responsive"></center></div>
+					<div><h4 class="text-center">WEB DESIGNER & DEVELOPER</h4></div>
+					<div class="contact-place"><center><button id="slide" type="button" class="btn-hover btn-contact">CONTACT ME</button></center></div>
+					<div class="tab-content">
+						<div id="myContact">	
+							<div class="contact-form">
+								<div class="form-group">
+									<input class="input-form" type="text" placeholder="Your name here..." required>
+								</div>
+								<div class="form-group">
+									<input class="input-form" type="email" placeholder="Your email here..." required>
+								</div>
+								<div class="form-group">
+									<textarea class="input-form" placeholder="Your message here..." rows="5" required></textarea>
+								</div>
+								<div class="form-group">
+									<button class="pull-right btn-hover btn-send" type="submit">Send</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- Know Me Section -->
+				<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+					<h2><b>Know Me</b></h2>
+					<!-- Navigation Tabs -->
+					<ul class="nav nav-tabs">
+						<li class="active"><a data-toggle="tab" href="#about">About Me</a></li>
+						<li><a data-toggle="tab" href="#resume">Resume</a></li>
+						<li><a data-toggle="tab" href="#skills">Skills</a></li>
+						<li><a data-toggle="tab" href="#services">Services</a></li>
+					</ul>
+					<!-- Content of Tabs-->
+					<div class="tab-content">
+						<!-- About Me Section -->
+						<div id="about" class="tab-pane fade in active">
+							<div>
+								<h3>About Me</h3>
+							</div>
+							<div>
+								<p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+							</div>
+							<div>
+								<button class="btn-hover btn-download" type="button">Download My CV</button>
+							</div>
+						</div>
+						<!-- Resume Section -->
+						<div id="resume" class="tab-pane fade">
+							<div id="myCarousel" class="carousel slide">
+							<!-- Wrapper for slides -->
+								<div class="carousel-inner" role="listbox">
+									<!-- Experiences Section -->
+									<div class="item active">
+										<div>
+											<div>
+												<h3>Experiences</h3>
+												<hr>
+											</div>
+											<div>
+												<div><h4>Themeforest <span style="font-size:12px">2005-2009</span></h4></div>
+												<div>
+													<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+												</div>
+												<hr>
+											</div>
+											<div>
+												<div><h4>Codecanyon <span style="font-size:12px">2005-2009</span></h4></div>
+												<div>
+													<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+												</div>
+												<hr>
+											</div>
+											<div>
+												<div><h4>Graphicriver <span style="font-size:12px">2005-2009</span></h4></div>
+												<div>
+													<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+												</div>
+												<hr>
+											</div>
+											<div>
+												<div><h4>Envato <span style="font-size:12px">2005-2009</span></h4></div>
+												<div>
+													<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+												</div>
+												<hr>
+											</div>
+										</div>
+									</div>
+									<!-- Study Section -->
+									<div class="item">
+										<div>
+											<div>
+												<h3>Study</h3>
+												<hr>
+											</div>
+											<div>
+												<div><h4>University of Design <span style="font-size:12px">2005-2009</span></h4></div>
+												<div>
+													<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+												</div>
+												<hr>
+											</div>
+											<div>
+												<div><h4>University of Design <span style="font-size:12px">2005-2009</span></h4></div>
+												<div>
+													<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+												</div>
+												<hr>
+											</div>
+											<div>
+												<div><h4>University of Design <span style="font-size:12px">2005-2009</span></h4></div>
+												<div>
+													<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+												</div>
+												<hr>
+											</div>
+											<div>
+												<div><h4>University of Design <span style="font-size:12px">2005-2009</span></h4></div>
+												<div>
+													<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+												</div>
+												<hr>
+											</div>
+										</div>
+									</div>
+									<!-- Indicators -->
+									<ol class="carousel-indicators">
+										<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+										<li data-target="#myCarousel" data-slide-to="1"></li>
+									</ol>
+								</div>
+							</div>
+						</div>
+						<!-- Skills Section -->
+						<div id="skills" class="tab-pane fade">
+							<div>
+								<h3>My Skills</h3>
+							</div>
+							<div>
+								<p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+							</div>
+							<div class="skills-place">
+								<div class="skillbar clearfix " data-percent="100%">
+									<div class="skillbar-title"><span>HTML</span></div>
+									<div class="skillbar-bar text-right">100%</div>
+								</div>
+								<div class="skillbar clearfix " data-percent="80%">
+									<div class="skillbar-title"><span>CSS</span></div>
+									<div class="skillbar-bar text-right">80%</div>
+								</div>
+								<div class="skillbar clearfix " data-percent="65%">
+									<div class="skillbar-title"><span>JAVASCRIPT</span></div>
+									<div class="skillbar-bar text-right">65%</div>
+								</div>
+								<div class="skillbar clearfix " data-percent="90%">
+									<div class="skillbar-title"><span>PHP</span></div>
+									<div class="skillbar-bar text-right">90%</div>
+								</div>
+							</div>
+							<div>
+								<p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+							</div>
+							<div>
+								<div class="skillbar clearfix " data-percent="92%">
+									<div class="skillbar-title"><span>ENGLISH</span></div>
+									<div class="skillbar-bar text-right">92%</div>
+								</div>
+								<div class="skillbar clearfix " data-percent="78%">
+									<div class="skillbar-title"><span>GERMAN</span></div>
+									<div class="skillbar-bar text-right">78%</div>
+								</div>
+								<div class="skillbar clearfix " data-percent="75%">
+									<div class="skillbar-title"><span>FRENCH</span></div>
+									<div class="skillbar-bar text-right">75%</div>
+								</div>
+								<div class="skillbar clearfix " data-percent="89%">
+									<div class="skillbar-title"><span>INDONESIAN</span></div>
+									<div class="skillbar-bar text-right">89%</div>
+								</div>
+							</div>
+						</div>
+						<!-- Services Section -->
+						<div id="services" class="tab-pane fade">
+							<div>
+								<h3>Services</h3>
+							</div>
+							<div class="services-place">
+								<div class="row">
+									<!-- Icon Service -->
+									<div class="col-xs-4 col-sm-3 col-md-3 col-lg-2 service-bar service-bg-1">
+										<center><span class="glyphicon glyphicon-pencil service-icon service-color-1"></span></center>
+									</div>
+									<!-- Title and Text -->
+									<div class="col-xs-8 col-sm-9 col-md-9 col-lg-10">
+										<div><h4>Web Design</h4></div>
+										<div>
+											<p class="text-justify">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="services-place">
+								<div class="row">
+									<div class="col-xs-4 col-sm-3 col-md-3 col-lg-2 service-bar service-bg-2">
+										<center><span class="glyphicon glyphicon-wrench service-icon service-color-2"></span></center>
+									</div>
+									<div class="col-xs-8 col-sm-9 col-md-9 col-lg-10">
+										<h4>Web Development</h4>
+										<p class="text-justify">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+									</div>
+								</div>
+							</div>
+							<div class="services-place">
+								<div class="row">
+									<div class="col-xs-4 col-sm-3 col-md-3 col-lg-2 service-bar service-bg-1">
+										<center><span class="glyphicon glyphicon-tasks service-icon service-color-1"></span></center>
+									</div>
+									<div class="col-xs-8 col-sm-9 col-md-9 col-lg-10">
+										<div><h4>Web Engineering</h4></div>
+										<div>
+											<p class="text-justify">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="services-place">
+								<div class="row">
+									<div class="col-xs-4 col-sm-3 col-md-3 col-lg-2 service-bar service-bg-2">
+										<center><span class="glyphicon glyphicon-phone service-icon service-color-2"></span></center>
+									</div>
+									<div class="col-xs-8 col-sm-9 col-md-9 col-lg-10">
+										<div><h4>Responsive Web</h4></div>
+										<div>
+											<p class="text-justify">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-12 col-sm-12 col-md-5 col-lg-5">
+					<!-- Work Section -->
+					<h2><b>Work</b></h2>
+					<div class="row galery-bottom">
+						<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 galery-right">
+							<div class="img-hover">
+								<!-- 1st Image -->
+								<a href="#" id="link1" data-toggle="modal" data-target="#myModal">
+									<!-- Title on value="" and Text on alt="" for Modal -->
+									<img src="image/work-1.jpg" id="img1" class="img-responsive" value="DATE ON SITE" alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.">
+								</a>
+								<div class="title-bar">
+									<h2>DATE ON SITE</h2>
+								</div>
+							</div>
+						</div>
+						<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 galery-left">
+							<div class="img-hover">
+								<!-- 2nd Image -->
+								<a href="#" id="link1" data-toggle="modal" data-target="#myModal">
+									<img src="image/work-2.jpg" id="img2" class="img-responsive" value="LAYOUT DESIGN" alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.">
+								</a>
+								<div class="title-bar">
+									<h2>LAYOUT DESIGN</h2>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row galery-top">
+						<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 galery-right">
+							<div class="img-hover">
+								<!-- 3rd Image -->
+								<a href="#" id="link1" data-toggle="modal" data-target="#myModal">
+									<img src="image/work-3.jpg" id="img3" class="img-responsive" value="CULINARY WEB" alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.">
+								</a>
+								<div class="title-bar">
+									<h2>CULINARY WEB</h2> 
+								</div>
+							</div>
+						</div>
+						<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 galery-left">
+							<div class="img-hover">
+								<!-- 4th Image -->
+								<a href="#" id="link1" data-toggle="modal" data-target="#myModal">
+									<img src="image/work-4.jpg" id="img4" class="img-responsive" value="RESPONSIVE WEB" alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.">
+								</a>
+								<div class="title-bar">
+										<h2>RESPONSIVE WEB</h2> 
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- Modal -->
+					<div class="modal fade" id="myModal" role="dialog">
+						<div class="modal-dialog modal-md">
+						  <!-- Modal content-->
+							<div class="modal-content">
+								<div class="modal-header">
+									<div class="modal-title" id="showTitle"></div>
+								</div>
+								<div class="modal-body">
+									<div class="row">
+										<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6" id="showImg">
+										</div>
+										<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 text-justify" id="showText">
+										</div>
+									</div>
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn-hover btn-close" data-dismiss="modal">Close</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+							
+						</div>
+					</div>								
+				</div>
+			</div>
+		</div>
+		<!-- Footer Section -->
+		<footer class="container-fluid footer footer-bg">
+			<div class="row">
+				<div class="footer-bg col-xs-12 col-sm-3 col-md-3 col-lg-2">
+					<div>
+						<p class="text-left">
+						<span class="glyphicon glyphicon-phone"></span>&nbsp
+							<!-- Call Link for Phone, for PC Only Text -->
+							<script type='text/javascript'>
+								if( /Opera Mini|BlackBerry|Android|webOS|iPhone|iPad|IEMobile/i.test(navigator.userAgent) ) {
+									document.write('<a style="color:#ffffff" href="tel:+62xxxxxxxxxx">+62xxxxxxxxxx</a>');
+								} else {
+									document.write('+62xxxxxxxxxx');
+								}
+							</script>
+						</p>
+					</div>
+				</div>
+				<div class="footer-bg col-xs-12 col-sm-9 col-md-9 col-lg-10">
+					<div><p class="text-left"><span class="glyphicon glyphicon-envelope"></span>&nbsp; myemail@gmail.com</p></div>
+				</div>
+			</div>
+		</footer>
+	</body>
+	<!-- Script for Skillbar Animate-->
+	<script>
+		jQuery('.skillbar').each(function(){
+			jQuery(this).find('.skillbar-bar').animate({
+				width:jQuery(this).attr('data-percent')
+			},6000);
+		});
+	</script>
+	<!-- Script for Slide Down Contact -->
+	<script> 
+		$(document).ready(function(){
+			$("#slide").click(function(){
+				$("#myContact").slideDown("slow");
+			});
+		});
+	</script> 
+	<style> 
+		#myContact {
+			display: none;
+		}
+	</style>
+	<!-- Script for Modal -->
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('img').on('click', function() {
+				$("#showImg").empty();
+				$("#showTitle").empty();
+				$("#showText").empty();
+				var image = $(this).attr("src");
+				$("#showImg").append("<img class='img-responsive' src='" + image + "' />")
+				var title = $(this).attr("value");
+				$("#showTitle").append("<h4>"+ title +"</h4>")
+				var text = $(this).attr("alt");
+				$("#showText").append("<p>"+ text +"</p>")
+			})
+		});
+	</script>
+</html>
