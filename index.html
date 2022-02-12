@@ -429,6 +429,8 @@
 										</div>
 										<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 text-justify" id="showText">
 										</div>
+										<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 text-justify" id="showUri">
+										</div>
 									</div>
 								</div>
 								<div class="modal-footer">
@@ -497,6 +499,7 @@
 				$("#showImg").empty();
 				$("#showTitle").empty();
 				$("#showText").empty();
+				$("#showUri").empty();
 				var image = $(this).attr("src");
 				$("#showImg").append("<img class='img-responsive' src='" + image + "' />")
 				var title = $(this).attr("value");
@@ -504,7 +507,7 @@
 				var text = $(this).attr("alt");
 				var uri = $(this).attr("uri");
 				$("#showText").append("<p>"+ text +"</p>")
-				$("#showText").append("<a href='"+ uri +"'>"Kunjungi Halaman"</p>")
+				$("#showUri").append("<a href='"+ uri +"'>"Kunjungi Halaman"</p>")
 			})
 		});
 	</script>
