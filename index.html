@@ -383,8 +383,7 @@
 							<div class="img-hover">
 								<!-- 2nd Image -->
 								<a href="#" id="link1" data-toggle="modal" data-target="#myModal">
-									<img src="image/work-2.jpg" id="img2" class="img-responsive" value="BRANDING" alt="Ruang Nyaman adalah brand dekorasi ruangan dengan produk yang simpel dan murah meriah yang digemari para remaja khususnya pelajar, mahasiswa, dan pekerja yang sedang nge-kost. Mengusung konsep yang">
-									<a href="google.com">Test</a>
+									<img src="image/work-2.jpg" id="img2" class="img-responsive" uri="http://gogle.com" value="BRANDING" alt="Ruang Nyaman adalah brand dekorasi ruangan dengan produk yang simpel dan murah meriah yang digemari para remaja khususnya pelajar, mahasiswa, dan pekerja yang sedang nge-kost. Mengusung konsep yang">
 									</a>
 								<div class="title-bar">
 									<h2>BRANDING</h2>
@@ -503,7 +502,9 @@
 				var title = $(this).attr("value");
 				$("#showTitle").append("<h4>"+ title +"</h4>")
 				var text = $(this).attr("alt");
+				var uri = $(this).attr("uri");
 				$("#showText").append("<p>"+ text +"</p>")
+				$("#showText").append("<a href='"+ uri +"'>"Kunjungi Halaman"</p>")
 			})
 		});
 	</script>
