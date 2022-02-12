@@ -178,8 +178,8 @@
 					</div>
 				</div>
 				<!-- Know Me Section -->
-				<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4" style="padding-right:10px;padding-left:10px;">
-					<h2><b>Tentang</b></h2>
+				<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+					<h2 style="padding-left:10px"><b>Tentang</b></h2>
 					<!-- Navigation Tabs -->
 					<ul class="nav nav-tabs">
 						<li class="active"><a data-toggle="tab" href="#about">Profil</a></li>
@@ -188,7 +188,7 @@
 						<li><a data-toggle="tab" href="#services">Layanan</a></li>
 					</ul>
 					<!-- Content of Tabs-->
-					<div class="tab-content">
+					<div class="tab-content" style="padding-right:10px;padding-left:10px;">
 						<!-- About Me Section -->
 						<div id="about" class="tab-pane fade in active">
 							<div>
@@ -362,9 +362,9 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-xs-12 col-sm-12 col-md-5 col-lg-5" style="padding-right:10px;padding-left:10px;">
+				<div class="col-xs-12 col-sm-12 col-md-5 col-lg-5">
 					<!-- Work Section -->
-					<h2><b>Portofolio</b></h2>
+					<h2 style="padding-left:10px;"><b>Portofolio</b></h2>
 					<div class="row galery-bottom">
 						<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 galery-right">
 							<div class="img-hover">
@@ -372,7 +372,6 @@
 								<a href="#" id="link1" data-toggle="modal" data-target="#myModal">
 									<!-- Title on value="" and Text on alt="" for Modal -->
 									<img src="image/work-1.jpg" id="img1" class="img-responsive" uri="https://bocitimekuy.com#Kunjungi Halaman" value="WEBSITE" alt="Website ECommerce Boci Time Kuy yang dilengkapi fitur keranjang, checkout, dan fitur tambahan live chat.">
-									
 									</a>
 								<div class="title-bar">
 									<h2>WEBSITE</h2>
@@ -383,7 +382,7 @@
 							<div class="img-hover">
 								<!-- 2nd Image -->
 								<a href="#" id="link1" data-toggle="modal" data-target="#myModal">
-									<img src="image/work-2.jpg" id="img2" class="img-responsive" uri="https://instagtam.com/ruangnyaman_mlg#Kunjungi Halaman" value="BRANDING" alt="Ruang Nyaman adalah brand dekorasi ruangan dengan produk yang simpel dan murah meriah yang digemari para remaja khususnya pelajar, mahasiswa, dan pekerja yang sedang nge-kost. Mengusung konsep yang">
+									<img src="image/work-2.jpg" id="img2" class="img-responsive" uri="http://instagtam.com/ruangnyaman_mlg/#Kunjungi Halaman" value="BRANDING" alt="Ruang Nyaman adalah brand dekorasi ruangan dengan produk yang simpel dan murah meriah yang digemari para remaja khususnya pelajar, mahasiswa, dan pekerja yang sedang nge-kost. Mengusung konsep yang">
 									</a>
 								<div class="title-bar">
 									<h2>BRANDING</h2>
@@ -457,7 +456,7 @@
 							<!-- Call Link for Phone, for PC Only Text -->
 							<script type='text/javascript'>
 								if( /Opera Mini|BlackBerry|Android|webOS|iPhone|iPad|IEMobile/i.test(navigator.userAgent) ) {
-									document.write('<a style="color:#ffffff" href="tel:+62xxxxxxxxxx">+62xxxxxxxxxx</a>');
+									document.write('<a style="color:#ffffff" href="tel:+6283848137461">+6283848137461</a>');
 								} else {
 									document.write('+6283848137461');
 								}
@@ -506,7 +505,7 @@
 				$("#showTitle").append("<h4>"+ title +"</h4>")
 				var text = $(this).attr("alt");
 				var uri = $(this).attr("uri").split("#");
-				$("#showText").append("<p>"+ text +"</p>")
+				$("#showText").append("<br><p>"+ text +"</p>")
 				$("#showUri").append("<a href='"+ uri[0] +"'>"+ uri[1] +"</a>")
 			})
 		});
