@@ -505,7 +505,7 @@
 				$("#showTitle").append("<h4>"+ title +"</h4>")
 				var text = $(this).attr("alt");
 				var uri = $(this).attr("uri").split("#");
-				$("#showText").append("<br><p>"+ text +"</p>")
+				$("#showText").append("<br><p style='text-align:right'>"+ text +"</p>")
 				$("#showUri").append("<a href='"+ uri[0] +"'>"+ uri[1] +"</a>")
 			})
 		});
